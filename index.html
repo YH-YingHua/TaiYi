@@ -23,20 +23,20 @@
 
     <script>
         const vocabulary = [
-            { th: "สวัสดี", tw: "哩厚", roman: "lí-hó", th_spell: "ลี้-ห่อ", ipa: "li⁵³-ho⁵³", note: "ใช้ทักทายทั่วไป", audio: ["哩厚", "哩厚2"] },
-            { th: "สวัสดีทุกคน", tw: "大家好", roman: "ta̍k-ke hó", th_spell: "ตั๊ก-เก-ห่อ", ipa: "tak⁸-ke¹-ho⁵³", note: "ใช้ทักทายคนกลุ่มใหญ่", audio: ["大家好", "大家好2"] },
+            { th: "สวัสดี", tw: "哩厚", roman: "lí-hó", th_spell: "ลี้-ห่อ", ipa: "li⁵³-ho⁵³", note: "ใช้ทักทายเวลาเจอกัน (สำหรับ 1 คน)", audio: ["哩厚", "哩厚2"] },
+            { th: "สวัสดีทุกคน", tw: "大家好", roman: "ta̍k-ke hó", th_spell: "ตั๊ก-เก-ห่อ", ipa: "tak⁸-ke¹-ho⁵³", note: "ใช้ทักทายเวลาพบกลุ่มคน", audio: ["大家好", "大家好2"] },
             { th: "สวัสดีทุกคน ฉันชื่อบอนนี่", tw: "大家好，我是Bonnie", roman: "ta̍k-ke hó, góa sī Bonnie", th_spell: "ตั๊ก-เก-ห่อ ว้า-ซี-Bonnie", ipa: "tak⁸-ke¹-ho⁵³ gua⁵³-si³³", note: "แนะนำตัวแบบเป็นทางการ", audio: ["大家好，我是Bonnie"] },
-            { th: "ฉันเป็นคนทับศัพท์ไทยค่ะ", tw: "哇洗泰國人", roman: "góa sī Thài-kok-lâng", th_spell: "ว้า-ซี-ไท่-ก๊ก-ลั้ง", ipa: "gua⁵³-si³³ tʰai³³-kok⁷-laŋ²⁴", note: "บอกสัญชาติ", audio: ["我是泰國人"] },
-            { th: "กินอิ่มไหม", tw: "呷飽未", roman: "chia̍h-pá-bē", th_spell: "เจี๊ยะ-ป้า-เบ้", ipa: "tsiaʔ⁸-pa⁵³-be³³", note: "คำทักทายยอดฮิต (กินข้าวหรือยัง)", audio: ["呷飽未", "呷飽未2"] },
+            { th: "ฉันเป็นคนทับศัพท์ไทยค่ะ", tw: "哇洗泰國人", roman: "góa sī Thài-kok-lâng", th_spell: "ว้า-ซี-ไท่-ก๊ก-ลั้ง", ipa: "gua⁵³-si³³ tʰai³³-kok⁷-laŋ²⁴", note: "ใช้บอกว่าตัวเองเป็นคนไทย", audio: ["哇洗泰國人"] },
+            { th: "กินอิ่มไหม", tw: "呷飽未", roman: "chia̍h-pá-bē", th_spell: "เจี๊ยะ-ป้า-เบ้", ipa: "tsiaʔ⁸-pa⁵³-be³³", note: "วิธีทักทายแบบดั้งเดิมของไต้หวัน (กินข้าวหรือยัง)", audio: ["呷飽未", "呷飽未2"] },
             { th: "อร่อย", tw: "厚呷", roman: "hó-chia̍h", th_spell: "ห่อ-เจี๊ยะ", ipa: "ho⁵³-tsiaʔ⁸", note: "ใช้ชมรสชาติอาหาร", audio: ["厚呷"] },
-            { th: "20 บาท", tw: "二十塊", roman: "jī-cha̍p-kho͘", th_spell: "ยี่-จับ-โคว", ipa: "dzi³³-tsap⁸-kʰɔ¹", note: "บอกราคา 20 เหรียญไต้หวัน", audio: ["二十塊"] },
+            { th: "20 บาท", tw: "二十塊", roman: "jī-cha̍p-kho͘", th_spell: "ยี่-จับ-โคว", ipa: "dzi³³-tsap⁸-kʰɔ¹", note: "เอนี่ก็เรียนได้นะ", audio: ["二十塊"] },
             { th: "น่ารัก", tw: "勾錐", roman: "ko-chui", th_spell: "โก-จุย", ipa: "ko¹-tsui¹", note: "ชมว่าน่ารัก", audio: ["勾錐", "勾錐2"] },
             { th: "สวยมาก", tw: "就水欸", roman: "chiù-súi--ê", th_spell: "จิ่ว-สุ่ย-เอ่", ipa: "tsiu³³-sui⁵³-e", note: "ชมว่าสวยมากๆ", audio: ["就水欸"] },
             { th: "ฉันรักคุณ", tw: "哇愛哩", roman: "góa ài lí", th_spell: "ว้า-ไอ้-ลี้", ipa: "gua⁵³-ai³³-li⁵³", note: "บอกรัก", audio: ["哇愛哩", "哇愛哩2"] },
             { th: "ขอบคุณนะคะ", tw: "甘蝦", roman: "kám-siā", th_spell: "กั๋ม-เซี่ย", ipa: "kam⁵³-sia³³", note: "ใช้ขอบคุณผู้อื่น", audio: ["甘蝦"] },
             { th: "อะไรนะ", tw: "蝦米", roman: "siá-mi̍h", th_spell: "เซี่ย-มี่", ipa: "sia⁵³-miʔ⁸", note: "ถามเมื่อไม่เข้าใจหรือตกใจ", audio: ["蝦米", "蝦米2"] },
             { th: "ไม่รู้", tw: "不知道", roman: "m̄-chai", th_spell: "อืม-ไจ", ipa: "m³³-tsai¹", note: "เมื่อไม่ทราบข้อมูล", audio: ["不知道", "不知道2"] },
-            { th: "ไม่เข้าใจ", tw: "聽無", roman: "thiaⁿ-bô", th_spell: "เทีย-โบ", ipa: "tʰiaⁿ¹-bo²⁴", note: "ใช้เมื่อฟังไม่รู้เรื่อง", audio: ["聽無", "聽無2"] },
+            { th: "ไม่เข้าใจ", tw: "聽無", roman: "thiaⁿ-bô", th_spell: "เทีย-โบ", ipa: "tʰiaⁿ¹-bo²⁴", note: "เวลาไม่เข้าใจหรือประหลาดใจ", audio: ["聽無", "聽無2"] },
             { th: "เจอกันนะ", tw: "再會", roman: "chài-hoē", th_spell: "จ่าย-ห่วย", ipa: "tsai³³-hue³³", note: "ใช้บอกลา", audio: ["再會", "再會2"] }
         ];
 
