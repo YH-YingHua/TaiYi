@@ -68,7 +68,7 @@
         });
 
         function playAudio(name) {
-            const audio = new Audio(`audio/${name}.mp3`); // 假設音檔放在 audio 資料夾
+            const audio = new Audio(`TaiYi/${name}.mp3`);
             audio.play().catch(e => alert("หาไฟล์เสียงไม่เจอ: " + name + ".mp3"));
         }
     </script>
